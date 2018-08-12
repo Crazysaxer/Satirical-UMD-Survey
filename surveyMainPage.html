@@ -1,0 +1,72 @@
+
+<head>
+    <title>Satirical UMD Survey</title>
+    <link rel="stylesheet" href="SurveyStyleSheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<h1 id="title">UMD Survey Form</h1>
+
+<div id="form-group">
+<p id="description">Share your experience of your favorite campus that has just a little too much red brick<p>
+  
+<form id="survey-form">
+
+<div id="text-and-dropdown">
+  <div class="form-group">
+    <label id="name-label" for="name" class="main-label">* Name:</label> <input id="name" type="text" placeholder="Testudo McLuckyNose" class="form-control" required>
+  </div>
+  <div class="form-group">
+    <label id="email-label" for="email" class="main-label">* Email:</label> <input id="email" type="email" placeholder="GenericEmail@terpmail.umd.edu" class="form-control" required>
+  </div>
+  <div class="form-group">
+    <label id="number-label" for="number" class="main-label">* Age:</label> <input id="number" type="number" placeholder="42" min="0" max="120" class="form-control" required>  
+  </div>
+  <div class="form-group">
+    <label id="dropdown-label" for="dropdown" class="main-label">What year are you?</label> 
+  <select id="dropdown" class="form-control">
+    <option disabled value>Select an option</option>
+    <option value="Freshman">Freshman</option>
+    <option value="Sophomore">Sophomore</option>
+    <option value="Junior">Junior</option>
+    <option value="Senior">Senior</option>
+    <option value="Super Senior">Super Senior</option>
+    <option value="failure">Doesn't matter, I'm failing everything</option>
+  </select>
+  </div>
+</div>
+  
+<p id="radio-text">How satisfied are you with UMD as a whole?</p>
+  <ul>
+    <li> <input type="radio" name="Satisfaction" value="Very"> <label id="Very">Very Satisfied</label> </li>
+    <li> <input type="radio" name="Satisfaction" value="Satisfied"> <label id="Satisfied">Satisfied</label> </li>
+    <li> <input type="radio" name="Satisfaction" value="Neutral"> <label id="Neutral">Neutral</label> </li>
+    <li> <input type="radio" name="Satisfaction" value="Unsatisfied"> <label id="Unsatisfied">Unsatisfied</label> </li>
+    <li> <input type="radio" name="Satisfaction" value="Math"> <label id="Math">I am a math major</label> </li>
+</ul>
+  
+  <p>What are your favorite libraries?</p>
+  <ul>
+    <li><input type="checkbox" value="Mckeldin"> <label>Mckeldin Library</label></li>
+    <li><input type="checkbox" value="Architecture"> <label>Architecture Library</label></li>
+    <li><input type="checkbox" value="Art"> <label>Art Library</label></li>
+    <li><input type="checkbox" value="Hornbake"> <label>Hornbake Library</label></li>
+    <li><input type="checkbox" value="PArt"> <label>Performing Arts Library</label></li>
+    <li><input type="checkbox" value="Priddy"> <label>Priddy Library</label></li>
+    <li><input type="checkbox" value="Severn"> <label>Severn Library</label></li>
+    <li><input type="checkbox" value="STEM"> <label>STEM Library</label></li>
+    <li><input type="checkbox" value="What"> <label>What is a library?</label></li>
+    <li><input type="checkbox" value="Ikea"> <label>I just hate Ikea</label></li>
+  </ul>
+  
+  <label id="comment-label" for="comment-box" class="main-label">How do you avoid crying in the fetal position during finals week?</label>
+  <div>
+  <textarea rows="5" cols="30" id="comment-box" placeholder="Testudo can't help you"></textarea>
+    </div>
+
+  <div id="submit-div">
+    <input id="submit" type="submit" class="btn btn-primary">
+  </div>
+</div>
+
+
